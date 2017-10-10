@@ -5,7 +5,11 @@ public class B extends A {
         super(number, name);
     }
 
-    public void show() {
+    private void Increment() {}
+    protected void decrement() {}
+    void changeName() {}
+
+    public void checkAccess() {
         super.name = "5";
         super.number = 5;
     }

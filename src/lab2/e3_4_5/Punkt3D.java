@@ -19,4 +19,13 @@ public class Punkt3D extends Punkt2D {
     }
 
     protected double z;
+
+    @Override
+    public String toString() {
+        return "Punkt3D{" +
+                "z=" + z +
+                ", x=" + x +
+                ", y=" + y +
+                '}';
+    }
 }

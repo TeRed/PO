@@ -9,11 +9,14 @@ public class A {
         number--;
     }
     public void callChangeName() {
-        name += "plus";
+        name += "A";
     }
     public void callIncrement() {
         number++;
     }
+    private void Increment() {}
+    protected void decrement() {}
+    void changeName() {}
 
     protected int number;
     String name;

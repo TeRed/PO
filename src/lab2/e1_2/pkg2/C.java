@@ -7,7 +7,9 @@ public class C extends B {
         super(number, name);
     }
 
-    public void show() {
+    void changeName() {}
+
+    public void checkAccess() {
         //super.name = "5";
         super.number = 5;
     }
