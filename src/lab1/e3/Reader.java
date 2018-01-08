@@ -11,7 +11,7 @@ public class Reader{
         System.out.print("Wpisz jakis tekst: ");
         try {
             text = bfr.readLine();
-        } catch(java.lang.Throwable e) {};
+        } catch(Exception e) {}
         System.out.println("Wpisales: " + text);
     }
 }

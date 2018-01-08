@@ -14,8 +14,8 @@ public class Login {
 
     /**
      *
-     * @param _login login jaki dana instancja klasy będiz eprzechowywać
-     * @param _password hasło jakie dana instancja klasy będiz eprzechowywać
+     * @param _login login jaki dana instancja klasy będzie przechowywać
+     * @param _password hasło jakie dana instancja klasy będzie przechowywać
      */
     public Login(String _login, String _password){
         login = _login;

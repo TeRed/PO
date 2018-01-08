@@ -23,7 +23,11 @@ public class LoginProgram {
          przechowywanymi w obiekcie log Jeśli tak, to ma zostać
          wyswietlone "OK", jesli nie - prosze wyswietlić informacje o błedzie
          */
-	  	System.out.println(log.check(login, haslo));
+	  	if(log.check(login, haslo)) {
+			System.out.println("OK");
+		} else {
+			System.out.println("Błędne hasło lub login...");
+		}
 
 	  }catch(IOException e){e.printStackTrace();}
 

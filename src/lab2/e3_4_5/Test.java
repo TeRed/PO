@@ -26,7 +26,7 @@ public class Test {
                     punkty.add(new Punkt3D(s.nextDouble(), s.nextDouble(), s.nextDouble()));
                     break;
                 case '2':
-                    for (Punkt3D p : punkty) {
+                    for (Punkt2D p : punkty) {
                         System.out.println(p.toString());
                     }
                     break;

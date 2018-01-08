@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 public class MicroDvdDelay {
     public static void delay(final String in, final String out, int delay, int fps) throws IOException {
         int addition = Math.round((fps * delay)/1000);
-        Pattern pattern = Pattern.compile("^\\{(\\d+)}\\{(\\d+)}(.*)$");
+        Pattern pattern = Pattern.compile("^\\{(\\d+)}\\{(\\d+)}(.*)");
         BufferedWriter bw = null;
         BufferedReader br = null;
 

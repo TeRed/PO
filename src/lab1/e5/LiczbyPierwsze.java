@@ -1,23 +1,22 @@
 package lab1.e5;
 
+import java.util.Arrays;
 
 public class LiczbyPierwsze {
-    public int x = 4;
-    public void all(int lim) {
-        boolean[] array = new boolean[lim];
-        for (int i = 0; i < lim; i++) {
-            array[i] = true;
-        }
+    public static void allBelow(int lim) {
+        boolean[] isPresent = new boolean[lim];
+        Arrays.fill(isPresent, true);
+        isPresent[0] = false;
+        isPresent[1] = false;
 
         for (int i = 2; i <= Math.sqrt(lim); i++) {
-            if(array[i] == true)
-                for (int j = i*i; j < lim; j += i) {
-                    array[j] = false;
-                }
+            if(isPresent[i] == true) {
+                for (int j = i*i; j < lim; j += i) isPresent[j] = false;
+            }
         }
 
-        for (int i = 2; i < lim; i++) {
-            if(array[i]) System.out.println(i);
+        for (int i = 0; i < lim; i++) {
+            if(isPresent[i]) System.out.println(i);
         }
     }
 }

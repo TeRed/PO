@@ -7,10 +7,7 @@ public class C extends B {
         super(number, name);
     }
 
-    void changeName() {}
+    //name is package private method
+//    void changeName() { name += "C"; }
 
-    public void checkAccess() {
-        //super.name = "5";
-        super.number = 5;
-    }
 }

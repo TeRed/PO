@@ -10,8 +10,5 @@ public class Main {
                 .addSubject("Mail testowy")
                 .addContent("Brak tresci")
                 .build();
-//        System.out.println(message);
-
-//        message.send();
     }
 }

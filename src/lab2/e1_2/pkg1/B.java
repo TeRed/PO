@@ -5,12 +5,7 @@ public class B extends A {
         super(number, name);
     }
 
-    private void Increment() {}
-    protected void decrement() {}
-    void changeName() {}
-
-    public void checkAccess() {
-        super.name = "5";
-        super.number = 5;
-    }
+    private void increment() { number += 2; }
+    protected void decrement() { number -= 2; }
+    void changeName() { name += "B"; }
 }
